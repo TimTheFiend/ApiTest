@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/edtName"
+        android:hint="@string/name"
+        android:inputType="text"
+
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edtJob"
+        android:hint="@string/job"
+        android:inputType="text"
+
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edtDob"
+        android:hint="Birth year:"
+        android:inputType="number"
+
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <RadioGroup
+        android:id="@+id/rdgLicense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rdbHasLicense"
+            android:text="Has License"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:id="@+id/rdbNoLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doesn't have License" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rdgSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rdbMale"
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/rdbFemale"
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RadioGroup>
+    <Spinner
+        android:id="@+id/spnRelationship"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </Spinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+        >
+        <Button
+            android:id="@+id/btnUpdate"
+            android:text="@string/update_user"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            />
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="@string/delete_user"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnBack"
+        android:text="@string/go_back"
+
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

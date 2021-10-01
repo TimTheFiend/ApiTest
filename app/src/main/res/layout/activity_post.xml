@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:id="@+id/edtNameP"
+        android:hint="@string/name"
+        android:inputType="text"
+
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edtJobP"
+        android:hint="@string/job"
+        android:inputType="text"
+
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edtDobP"
+        android:hint="Birth year:"
+        android:inputType="number"
+        android:digits="0123456789"
+
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <RadioGroup
+        android:id="@+id/rdgLicenseP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rdbHasLicenseP"
+            android:text="Has License"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:id="@+id/rdbNoLicenseP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doesn't have License" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rdgSexP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rdbMaleP"
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/rdbFemaleP"
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RadioGroup>
+    <Spinner
+        android:id="@+id/spnRelationshipP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </Spinner>
+
+    <Button
+        android:id="@+id/btnPostP"
+        android:text="@string/create"
+
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/btnPostBackP"
+        android:text="@string/go_back"
+
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

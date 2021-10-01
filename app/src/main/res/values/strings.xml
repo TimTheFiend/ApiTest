@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ApiTest</string>
+    <string name="btnGet">Get person(s)</string>
+    <string name="inputGet">Person ID:</string>
+    <string name="name">Name:</string>
+    <string name="job">Job:</string>
+    <string name="update_user">Update user</string>
+    <string name="delete_user">Delete user</string>
+    <string name="go_back">Go back</string>
+    <string name="create">Create</string>
+</resources>
